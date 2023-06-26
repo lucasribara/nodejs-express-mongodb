@@ -1,4 +1,5 @@
-module.exports = {
-    //url: "mongodb://localhost:27017/lucasribara_db"
-    url: "mongodb+srv://mongotut:testing123@cluster0.gxoueaa.mongodb.net/TutorialDB?retryWrites=true&w=majority"
+const secrets = require('../../secrets');
+
+module.exports = {    
+    url: `mongodb+srv://mongotut:${secrets.MONGO_DB_PASSWORD}@cluster0.gxoueaa.mongodb.net/TutorialDB?retryWrites=true&w=majority`
 }
