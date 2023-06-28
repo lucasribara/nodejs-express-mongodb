@@ -1,11 +1,6 @@
 const db = require("../models");
 const Tutorial = db.tutorials;
 
-exports.testing = (req, res) => {
-  res.status(200).send({message: "Connected the API."});
-  return;
-}
-
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
   // Validate request

@@ -3,9 +3,6 @@ module.exports = app => {
   
     var router = require("express").Router();
   
-    //Test connection
-    router.get("/test", tutorials.testing);
-
     // Create a new Tutorial
     router.post("/", tutorials.create);
   
